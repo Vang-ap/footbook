@@ -1,0 +1,10 @@
+<div id="team-list-container">
+  <mat-form-field appearance="fill">
+    <mat-label>Search a team</mat-label>
+    <input matInput [(ngModel)]="query">
+  </mat-form-field>
+
+  <div id="team-list">
+    <app-team-item *ngFor="let team of teams | search:query" [team]="team"></app-team-item>
+  </div>
+</div>

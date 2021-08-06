@@ -1,0 +1,16 @@
+#team-list-container {
+  display: flex;
+  flex-direction: column;
+
+  .mat-form-field {
+    margin: 1.5rem 1rem;
+    width: 21rem;
+  }
+
+  #team-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}

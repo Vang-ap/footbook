@@ -1,0 +1,9 @@
+<mat-card class="team-item">
+  <mat-card-header>
+    <mat-card-title>{{ team.strTeam }}</mat-card-title>
+  </mat-card-header>
+  <img [appTeamLogo]="team">
+  <mat-card-actions>
+    <a class="buton-detail" [routerLink]="['team', team.idTeam]" mat-button>Voir l'équipe</a>
+  </mat-card-actions>
+</mat-card>

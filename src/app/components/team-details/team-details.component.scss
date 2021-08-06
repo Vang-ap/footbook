@@ -1,0 +1,26 @@
+h1 {
+  text-align: center;
+  color: #f09a58;
+  padding: 2rem 0;
+}
+
+.img-logo {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 1rem;
+}
+
+.button-retour {
+  display: flex;
+  justify-content: center;
+
+  a {
+    background-color: darkseagreen;
+    width: 10vh;
+    color: white;
+    margin: 2rem 1rem;
+  }
+  a:hover {
+    background-color: #f09a58;
+  }
+}

@@ -1,0 +1,38 @@
+<div id="contact">
+  <h1>Contactez-nous</h1>
+
+  <form class="contact-form" (submit)="submit()" [formGroup]="contactForm">
+    <div>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Prénom</mat-label>
+        <input matInput formControlName="firstName" required>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Nom</mat-label>
+        <input matInput formControlName="lastName" required>
+      </mat-form-field>
+    </div>
+
+    <div>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>E-mail</mat-label>
+        <input formControlName="email" matInput type="email" placeholder="Ex. toto@titi.fr" required>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Ville</mat-label>
+        <input formControlName="city" matInput placeholder="Ex. California" required>
+      </mat-form-field>
+    </div>
+
+    <div>
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Message</mat-label>
+        <textarea formControlName="message" matInput type="text" placeholder="Bonjour, etc..." required></textarea>
+      </mat-form-field>
+    </div>
+
+    <button [disabled]="!contactForm.valid" type="submit" mat-button>Valider</button>
+  </form>
+</div>

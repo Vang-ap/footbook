@@ -1,0 +1,27 @@
+#contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    text-align: center;
+    margin: 1rem 1rem;
+    color: darkseagreen;
+    font-size: xx-large;
+  }
+
+  form {
+    border-radius: 0.6rem;
+    border: 0.2rem solid darkseagreen;
+    width: fit-content;
+    padding: 1rem 1rem;
+  }
+
+  mat-form-field {
+    margin: 10px;
+  }
+
+  .full-width {
+    width: calc(100% - 20px);
+  }
+}
