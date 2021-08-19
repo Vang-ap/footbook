@@ -1,10 +1,15 @@
 #header {
+  padding: 0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: darkseagreen;
+  background-color: #000000;
   color: white;
   height: 150px;
+
+  img {
+    width: 11rem;
+  }
 
   h1 {
     font-size: 4rem;
@@ -15,7 +20,7 @@
     font-size: x-large;
 
     &:hover {
-      color: #facfad;
+      color: #f78e04;
     }
   }
 
@@ -44,7 +49,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: darkseagreen;
+  background-color: #8fbc8fba;
   color: white;
   font-size: larger;
   height: 50px;
@@ -59,7 +64,7 @@ footer {
 
   a {
     &:hover {
-      color: #facfad;
+      color: #eb8131dc;
     }
   }
 }
